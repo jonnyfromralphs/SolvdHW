@@ -1,0 +1,5 @@
+2023-05-08 21:37:27.444 [main] ERROR org.example.Main - Your transaction has been denied. You have insufficient funds.
+2023-05-08 21:37:27.447 [main] ERROR org.example.Main - The bank only accepts values greater than or equal to 0.
+2023-05-08 21:37:27.447 [main] ERROR org.example.Main - The bank only accepts values greater than or equal to 0.
+2023-05-08 21:37:27.457 [main] ERROR org.example.Main - The given CSV file is missing required information
+2023-05-08 21:37:27.457 [main] ERROR org.example.Main - src\main\resources\thisFileDoesNotExist.csv (The system cannot find the file specified)
