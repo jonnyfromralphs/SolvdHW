@@ -38,6 +38,10 @@ public class Main {
 
         Bank chaseBank = new Bank("Chase Bank", "523 W Adams St", customers);
 
+        System.out.println("*********************");
+        System.out.println("Week 3 and 4 Homework");
+        System.out.println("*********************\n");
+
         CurrencyConverter.convertUSDtoPesos(1000);
         CurrencyConverter.convertUSDtoEuros(1000);
         CurrencyConverter.convertUSDtoYen(1000);
