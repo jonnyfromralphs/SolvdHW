@@ -1,4 +1,4 @@
-package org.example.account;
+package org.example.entities.account;
 
 import java.util.Objects;
 

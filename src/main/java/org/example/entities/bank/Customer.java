@@ -1,6 +1,6 @@
-package org.example.bank;
+package org.example.entities.bank;
 
-import org.example.account.Account;
+import org.example.entities.account.Account;
 
 import java.util.HashSet;
 import java.util.Objects;
@@ -13,6 +13,10 @@ public class Customer {
     public Customer(String name) {
         this.name = name;
         this.customerAccounts = new HashSet<>();
+    }
+
+    public Set<Account> getCustomerAccounts() {
+        return customerAccounts;
     }
 
     public String getName() {

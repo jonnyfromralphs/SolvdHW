@@ -1,6 +1,6 @@
-package org.example.account;
+package org.example.entities.account;
 
-import org.example.interfaces.Interestable;
+import org.example.services.interfaces.Interestable;
 
 public class SavingsAccount extends Account implements Interestable {
     private final double INTEREST_RATE;

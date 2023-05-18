@@ -1,6 +1,6 @@
-package org.example.employee;
+package org.example.entities.employee;
 
-import org.example.interfaces.Payable;
+import org.example.services.interfaces.Payable;
 
 import java.util.HashMap;
 import java.util.Map;

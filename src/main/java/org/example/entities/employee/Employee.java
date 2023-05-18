@@ -1,4 +1,4 @@
-package org.example.employee;
+package org.example.entities.employee;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package org.example.account;
+package org.example.entities.account;
 
 import org.example.Main;
 import org.example.exceptions.InsufficientFundsException;

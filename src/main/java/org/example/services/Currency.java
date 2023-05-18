@@ -1,4 +1,4 @@
-package org.example.utils;
+package org.example.services;
 
 public enum Currency {
     USD("United States Dollar", "$", 2),

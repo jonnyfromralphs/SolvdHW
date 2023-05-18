@@ -1,12 +1,11 @@
-package org.example.bank;
+package org.example.entities.bank;
 
-import org.apache.logging.log4j.util.SystemPropertiesPropertySource;
 import org.example.Main;
-import org.example.employee.Employee;
-import org.example.employee.Manager;
-import org.example.employee.Teller;
+import org.example.entities.employee.Employee;
+import org.example.entities.employee.Manager;
+import org.example.entities.employee.Teller;
 import org.example.exceptions.InvalidCSVFileException;
-import org.example.utils.Currency;
+import org.example.services.Currency;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -101,31 +100,6 @@ public class Bank {
             System.out.println();
         }
     }
-
-    public ArrayList<Employee> getEmployeesWithFilter(Predicate<Employee> filterEmployee) {
-        ArrayList<Employee> filteredEmployees = new ArrayList<>();
-        for (Employee employee : employees) {
-            if (filterEmployee.test(employee)) {
-                filteredEmployees.add(employee);
-            }
-        }
-        return filteredEmployees;
-    }
-
-    public ArrayList<String> transformEmployees(Function<Employee, String> transformEmployee) {
-        ArrayList<String> employeesTransformed = new ArrayList<>();
-        for (Employee employee : employees) {
-            employeesTransformed.add(transformEmployee.apply(employee));
-        }
-        return employeesTransformed;
-    }
-
-    public void customGreetingWithConsumer(Consumer<Employee> employeeConsumer) {
-        for (Employee employee : employees) {
-            employeeConsumer.accept(employee);
-        }
-    }
-
 
     @Override
     public boolean equals(Object o) {
